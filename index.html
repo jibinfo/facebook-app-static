@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Deletion - Kids Activities</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #4a90e2;
+            font-size: 24px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .steps {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .steps li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 50px;
+            position: relative;
+        }
+
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #4a90e2;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .data-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .data-list li {
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #4a90e2;
+            border-radius: 4px;
+        }
+
+        .data-list li strong {
+            color: #4a90e2;
+        }
+
+        .alert {
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .alert-info {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            color: #0d47a1;
+        }
+
+        .alert-warning {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            color: #e65100;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #4a90e2;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #357abd;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .contact {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗑️ User Data Deletion Guide</h1>
+            <p>Kids Activities Platform - Privacy & Data Control</p>
+        </div>
+
+        <div class="content">
+            <div class="alert alert-info">
+                <strong>ℹ️ Your Privacy Matters</strong><br>
+                We respect your privacy rights. You can request deletion of your account and data at any time.
+            </div>
+
+            <div class="section">
+                <h2>How to Delete Your Data</h2>
+                <ol class="steps">
+                    <li>
+                        <strong>Login to Your Account</strong><br>
+                        Sign in to your Kids Activities account using your credentials.
+                    </li>
+                    <li>
+                        <strong>Go to Profile Settings</strong><br>
+                        Navigate to your profile page and find the settings section.
+                    </li>
+                    <li>
+                        <strong>Submit Deletion Request</strong><br>
+                        Click on "Delete Account" and fill in the required information.
+                    </li>
+                    <li>
+                        <strong>Confirmation</strong><br>
+                        We will process your request within 30 days and send you a confirmation email.
+                    </li>
+                </ol>
+            </div>
+
+            <div class="section">
+                <h2>Data That Will Be Deleted</h2>
+                <ul class="data-list">
+                    <li><strong>Account Information:</strong> Username, email, password, profile</li>
+                    <li><strong>Social Login Data:</strong> Facebook, Google login associations</li>
+                    <li><strong>Activity Records:</strong> Course enrollments, reviews, browsing history</li>
+                    <li><strong>Messages:</strong> Communication records with platform and merchants</li>
+                    <li><strong>Preferences:</strong> Notification settings, language preferences</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Facebook Login Data</h2>
+                <p>If you used Facebook login, deleting your account will:</p>
+                <ul class="data-list">
+                    <li>Disconnect the association with your Facebook account</li>
+                    <li>Delete all data we obtained from Facebook (name, email, profile picture)</li>
+                    <li>Revoke our access to your Facebook data</li>
+                </ul>
+                <div class="alert alert-warning">
+                    <strong>⚠️ Note:</strong> This only deletes data on our platform. To delete data on Facebook, please visit Facebook's privacy settings.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Data Retention</h2>
+                <p>Some data may be retained for legal requirements:</p>
+                <ul class="data-list">
+                    <li><strong>Financial Records:</strong> Retained for 7 years as required by tax law</li>
+                    <li><strong>Legal Documents:</strong> Contracts and agreements retained until statutory period</li>
+                    <li><strong>Audit Logs:</strong> Anonymized and retained for security purposes</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <a href="https://kidsactivities.com" class="btn">Go to Kids Activities</a>
+                <a href="https://kidsactivities.com/privacy" class="btn" style="background: #666;">Privacy Policy</a>
+            </div>
+
+            <div class="contact">
+                <h3>Need Help?</h3>
+                <p>If you encounter any issues deleting your data, please contact us:</p>
+                <p><strong>📧 Email:</strong> support@kidsactivities.com</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Kids Activities. All rights reserved.</p>
+            <p>This data deletion guide complies with GDPR, CCPA and Facebook Platform Policy.</p>
+        </div>
+    </div>
+</body>
+</html>
